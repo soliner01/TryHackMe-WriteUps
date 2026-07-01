@@ -4,7 +4,7 @@ Our goal is to traverse through the Active Directory environment and get the fla
 
 Start with an nmap scan on the target.
 ```
-nmap -sC -sV -p- -Pn 10.65.132.214
+nmap -sC -sV -p- -Pn 10.65.132.214 --min-rate 1000
 ```
 <img width="1920" height="1140" alt="Screenshot 2026-06-30 163630" src="https://github.com/user-attachments/assets/e554793f-5874-4b0a-827c-7372fef74e9d" />
 
