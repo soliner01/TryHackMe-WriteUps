@@ -86,6 +86,7 @@ It turns out health_report.sh is run with root permissions, and we are able to e
 
 Change the file contents to start a reverse shell. The target machine has busybox, so we can use that in our command.
 <img width="1920" height="1140" alt="Screenshot 2026-07-07 171647" src="https://github.com/user-attachments/assets/2dd7756d-e4e4-44d3-9580-b2d051bcd099" />
+<sub>(Note: the image above has incorrect code, it should be "busybox nc (...)" instead of "nc (...)". The code seen in the picture will not work without including busybox in the command.)</sub>
 
 We wait for the script to be automatically run by root, and we gain root privileges. We can find the fifth and final flag in the root directory.
 <img width="1920" height="1140" alt="Screenshot 2026-07-07 174041 (Redacted)" src="https://github.com/user-attachments/assets/e20641ab-ab33-4080-b685-d359cc3e8f64" />
